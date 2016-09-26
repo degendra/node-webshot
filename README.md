@@ -22,8 +22,9 @@ An html example:
 ```javascript
 var webshot = require('webshot');
 
-webshot('<html><body>Hello World</body></html>', 'hello_world.png', {siteType:'html'}, function(err) {
+webshot('<html><body>Hello World</body></html>', 'hello_world.png', {siteType:'html'}, function(err, loadTime) {
   // screenshot now saved to hello_world.png
+  // loadTime available only for non stream
 });
 ```
 
