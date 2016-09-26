@@ -12,8 +12,9 @@ A simple url example:
 ```javascript
 var webshot = require('webshot');
 
-webshot('google.com', 'google.png', function(err) {
+webshot('google.com', 'google.png', function(err, loadTime) {
   // screenshot now saved to google.png
+  // loadTime available only for non stream
 });
 ```
 
